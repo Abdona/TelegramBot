@@ -18,6 +18,10 @@ Telegram::Bot::Client.run(token) do |bot|
       bot.api.send_message(chat_id: message.chat.id, text: 'please enter the word you want to translate')
       bot.listen do |inner_message|
         case inner_message.text
+        when 'break' || 'Break'
+          meaning = deutsch_ass.translate(inner_message)
+          bot.api.send_message(chat_id: message.chat.id,
+                               text: "meaning of break : #{meaning}, really want to break use '/break'")
         when '/break'
           break
         else
@@ -26,7 +30,7 @@ Telegram::Bot::Client.run(token) do |bot|
       end
     else
       bot.api.send_message(chat_id: message.chat.id,
-                           text: 'please enter choose from "/start" ,, "/stop" , "/translate" ,or "/learn"')
+                           text: 'please enter choose from /start , /stop , /translate ,or /learn')
     end
   end
 end
