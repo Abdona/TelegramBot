@@ -11,10 +11,10 @@ Telegram::Bot::Client.run(token) do |bot|
       bot.api.send_message(chat_id: message.chat.id, text: "Hello, #{message.from.first_name}")
     when '/stop'
       bot.api.send_message(chat_id: message.chat.id, text: "Bye, #{message.from.first_name}")
-    when '/surprise'
+    when '/learn'
       info, type = deutsch_ass.information
       bot.api.send_message(chat_id: message.chat.id, text: "#{type} :: #{info}")
-    when 'translate'
+    when '/translate'
       bot.api.send_message(chat_id: message.chat.id, text: 'please enter the word you want to translate')
       bot.listen do |inner_message|
         case inner_message.text
@@ -24,6 +24,9 @@ Telegram::Bot::Client.run(token) do |bot|
           bot.api.send_message(chat_id: message.chat.id, text: deutsch_ass.translate(inner_message))
         end
       end
+    else
+      bot.api.send_message(chat_id: message.chat.id,
+                           text: 'please enter choose from "/start" ,, "/stop" , "/translate" ,or "/learn"')
     end
   end
 end
