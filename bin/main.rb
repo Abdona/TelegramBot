@@ -12,7 +12,8 @@ Telegram::Bot::Client.run(token) do |bot|
     when '/stop'
       bot.api.send_message(chat_id: message.chat.id, text: "Bye, #{message.from.first_name}")
     when '/surprise'
-      bot.api.send_message(chat_id: message.chat.id, text: deutsch_ass.information)
+      info, type = deutsch_ass.information
+      bot.api.send_message(chat_id: message.chat.id, text: "#{type} :: #{info}")
     end
   end
 end

@@ -6,6 +6,6 @@ class Assistant
              ask_about_age_formal: 'Wie alt sind Sie?' }
     key_index = info.keys
     rand_info = rand(3)
-    info[key_index[rand_info]]
+    [info[key_index[rand_info]], key_index[rand_info]]
   end
 end
