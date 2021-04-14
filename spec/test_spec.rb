@@ -7,11 +7,6 @@ describe Assistant do
       expect(test.information).to include(/\w/)
     end
   end
-  describe '#translate' do
-    it 'check translate' do
-      expect(test.translate('hello')).to eql('Hallo')
-    end
-  end
 end
 describe Translate do
   let(:test) { Translate.new }
