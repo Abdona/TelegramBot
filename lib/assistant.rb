@@ -1,3 +1,4 @@
+require '../lib/google_translate'
 class Assistant
   def initialize; end
 
@@ -7,5 +8,10 @@ class Assistant
     key_index = info.keys
     rand_info = rand(3)
     [info[key_index[rand_info]], key_index[rand_info]]
+  end
+
+  def translate(param)
+    de_translate = Translate.new
+    de_translate.to_german(param)
   end
 end
