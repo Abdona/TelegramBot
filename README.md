@@ -20,7 +20,7 @@
 
 
 # Install Instruction
-0. first of first ,you should join the the bot on telegram using this link `t.me/Deutschassistant_bot`
+0. first thing first ,you should join the the bot on telegram using this link `t.me/Deutschassistant_bot`
 1. open your terminal in the location you want to install the project in.
 2. Clone the Repo on you computer using `git clone https://github.com/Abdona/TelegramBot.git`
 3. make sure you have Ruby installed; use `Ruby -v` to check for Ruby Version.
