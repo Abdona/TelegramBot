@@ -1,5 +1,5 @@
-require './lib/assistant'
-require './lib/google_translate'
+require '../lib/assistant'
+require '../lib/google_translate'
 describe Assistant do
   let(:test) { Assistant.new }
   describe '#information' do

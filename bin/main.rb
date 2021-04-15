@@ -8,9 +8,9 @@ Telegram::Bot::Client.run(token) do |bot|
   bot.listen do |message|
     case message.text
     when '/start'
-      bot.api.send_message(chat_id: message.chat.id, text: "Hello, #{message.from.first_name}")
+      bot.api.send_message(chat_id: message.chat.id, text: "Hallo, #{message.from.first_name}")
     when '/stop'
-      bot.api.send_message(chat_id: message.chat.id, text: "Bye, #{message.from.first_name}")
+      bot.api.send_message(chat_id: message.chat.id, text: "Tschüss, #{message.from.first_name}")
     when '/learn'
       info, type = deutsch_ass.information
       bot.api.send_message(chat_id: message.chat.id, text: "#{type} :: #{info}")
@@ -21,7 +21,7 @@ Telegram::Bot::Client.run(token) do |bot|
         when 'break' || 'Break'
           meaning = deutsch_ass.translate(inner_message)
           bot.api.send_message(chat_id: message.chat.id,
-                               text: "meaning of break : #{meaning}, really want to break use '/break'")
+                               text: "meaning of break : #{meaning}, really want to break use /break")
         when '/break'
           break
         else
@@ -30,7 +30,7 @@ Telegram::Bot::Client.run(token) do |bot|
       end
     else
       bot.api.send_message(chat_id: message.chat.id,
-                           text: 'please enter choose from /start , /stop , /translate ,or /learn')
+                           text: 'please choose from /start , /stop , /translate ,or /learn')
     end
   end
 end
