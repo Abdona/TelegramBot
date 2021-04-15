@@ -2,7 +2,7 @@ require 'telegram/bot'
 require 'json'
 require_relative '../lib/assistant'
 
-token = '1778305517:AAGu-u69L4AW8IpA4uDJzZEuul1Qjc5xsOk'
+token = '1773974309:AAH8_E1FAvhNmyfDUzpInlPFlmfRSaiqjRY'
 deutsch_ass = Assistant.new
 
 Telegram::Bot::Client.run(token) do |bot|
