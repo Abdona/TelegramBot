@@ -17,16 +17,17 @@
 - Use `/learn` to learn new phrases.
 
 # Bot Preview
-
+![Game preview](telegrambot.gif)
 
 # Install Instruction
-0. first thing first ,you should join the the bot on telegram using this link `t.me/Deutschassistant_bot`
-1. open your terminal in the location you want to install the project in.
-2. Clone the Repo on you computer using `git clone https://github.com/Abdona/TelegramBot.git`
-3. make sure you have Ruby installed; use `Ruby -v` to check for Ruby Version.
-4. cd to the project directory`cd TelegramBot/bin` 
-5. run `ruby main.rb`
+1. first thing first ,you should join the the bot on telegram using this link `t.me/Deutschassistant_bot`
+2. open your terminal in the location you want to install the project in.
+3. Clone the Repo on you computer using `git clone https://github.com/Abdona/TelegramBot.git`
+4. make sure you have Ruby installed; use `Ruby -v` to check for Ruby Version.
+5. cd to the project directory`cd TelegramBot/bin` 
+6. run `ruby main.rb`
 - nb. if you do not have ruby already installed kindly check this link for instruction how to install it on your OS `https://www.ruby-lang.org/en/documentation/installation/`
+- nb. if you do not have Telegram ruby API added to Gemfile, please use ` gem install telegram-bot-ruby`
 # Author
 
 # 👤 Abdulrahman Naser
