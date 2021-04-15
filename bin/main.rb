@@ -1,5 +1,5 @@
 require 'telegram/bot'
-require '../lib/assistant'
+require_relative '../lib/assistant'
 
 token = '1778305517:AAGu-u69L4AW8IpA4uDJzZEuul1Qjc5xsOk'
 deutsch_ass = Assistant.new

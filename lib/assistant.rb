@@ -1,4 +1,4 @@
-require '../lib/google_translate'
+require_relative 'google_translate'
 class Assistant
   def initialize; end
 
