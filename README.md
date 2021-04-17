@@ -19,6 +19,11 @@
 # Bot Preview
 ![Game preview](telegrambot.gif)
 
+# Testing
+1. open terminal
+2. cd to project using `cd TelegramBot`
+3. type `rsepc` in your terminal
+
 # Install Instruction
 1. first thing first ,you should join the the bot on telegram using this link `t.me/Deutschassistant_bot`
 2. open your terminal in the location you want to install the project in.
