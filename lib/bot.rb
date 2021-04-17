@@ -8,7 +8,8 @@ class Bot
     token = '1773974309:AAH8_E1FAvhNmyfDUzpInlPFlmfRSaiqjRY'
     deutsch_ass = Assistant.new
 
-    Telegram::Bot::Client.run(token) do |bot|
+    Telegram::Bot::Client.run(token, logger: Logger.new($stdout)) do |bot|
+      bot.logger.info('Bot has been started')
       bot.listen do |message|
         case message.text
         when '/start'
