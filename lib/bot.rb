@@ -5,7 +5,7 @@ require 'json'
 require_relative 'assistant'
 class Bot
   def initialize
-    token = '1773974309:AAH8_E1FAvhNmyfDUzpInlPFlmfRSaiqjRY'
+    token = 'place token'
     deutsch_ass = Assistant.new
 
     Telegram::Bot::Client.run(token, logger: Logger.new($stdout)) do |bot|
