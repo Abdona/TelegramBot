@@ -1,7 +1,5 @@
 require_relative 'google_translate'
 class Assistant
-  def initialize; end
-
   def information
     info = { greeting: 'Hallo', ask_about_age_informal: 'Wie alt bist du?',
              ask_about_age_formal: 'Wie alt sind Sie?' }
