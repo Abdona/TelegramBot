@@ -55,11 +55,11 @@ GEM
       equalizer (~> 0.0, >= 0.0.9)
 
 PLATFORMS
-  x86_64-linux
+  ruby
 
 DEPENDENCIES
   rspec
   telegram-bot-ruby
 
 BUNDLED WITH
-   2.2.16
+   2.1.2
