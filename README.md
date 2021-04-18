@@ -2,7 +2,7 @@
 
 # Bot Description
 
-- Deutsch Assistant Bot, helps the user learn new German phrases when he wants, sends daily German quotes, and also allows users to translate from English to German using Google API.
+- Deutsch Assistant Bot, helps the user learn new German phrases, receives daily German quotes, and also allows users to translate from English to German using Google API.
 
 # Technologies Used
 
